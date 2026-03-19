@@ -26,6 +26,7 @@
         height: 80px;
         width: 100%; 
         position: sticky;
+        top: 0;
       }
   
       #header li {
@@ -34,13 +35,18 @@
         color: #282342;
         list-style: none;
         display: inline;
-        margin: 5%;
+        margin: 0 5% 0 0;
+        position: relative;
+        top: 10px;
       }
-    
+          
       h2, h3 {
         font-family: Koho; 
         color: #CC2F5C;
+        font-size: 50px;
+        width: 50%;
       }
+      
       
       h1 {
         font-family: Koho; 
@@ -49,7 +55,26 @@
         margin-top: 60px;
       }
       
+      p { 
+        font-family: Krub;
+        color: #65FFDB;
+        font-size: 20px;
+        width: 50%;
+        text-align: left;
+      }
       
+      #mainContent {
+        display: grid;
+        grid-template-columns: 50% 50%;    
+
+      }
+      
+      .content {
+        
+        
+      }
+      
+    
       
     
     </style>
@@ -74,47 +99,51 @@
        YASEMIN EMIRA GUNAL
       </h1>
     
-    <div class="content">   
-    <img src="placeholder.png" style="width: 50%;" alt="placeholder">
+    <div id="mainContent">
+      <div class="content">   
+      <img src="placeholder.png" style="width: 50%;" alt="placeholder">
+      </div>
+      
+
+       <div class="content">   
+        <h2>
+          TITLE
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+        </p>
+      </div>
+
+      
+       <div class="content">   
+        <h2>
+          TITLE
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+        </p>
+      </div>
+
+      
+      <div class="content">   
+      <img src="placeholder.png" style="width: 50%;" alt="placeholder">
+      </div>
+      
+       <div class="content">   
+      <img src="placeholder.png" style="width: 50%;" alt="placeholder">
+      </div>
+      
+
+      <div class="content">   
+        <h2>
+          TITLE
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+        </p>
+      </div>
+      
     </div>
-    
-     <div class="content">   
-      <h2>
-        TITLE
-      </h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-      </p>
-    </div>
-    
-     <div class="content">   
-      <h2>
-        TITLE
-      </h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-      </p>
-    </div>
-    
-    <div class="content">   
-    <img src="placeholder.png" style="width: 50%;" alt="placeholder">
-    </div>
-    
-    <div class="content">   
-      <h2>
-        TITLE
-      </h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-      </p>
-    </div>
-    
-    
-    
-    <div class="content">   
-    <img src="placeholder.png" style="width: 50%;" alt="placeholder">
-    </div>
-    
     
     
   </body>
