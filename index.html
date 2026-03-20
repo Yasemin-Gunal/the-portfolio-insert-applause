@@ -174,7 +174,7 @@
       
     /* dropdown shtuff */
       
-      .avatar{
+      #avatar{
         position: fixed; 
         bottom: 0px;        
         right: 0px;           
@@ -183,8 +183,8 @@
       }
     
     </style>
-  
     
+      
   </head>
   <body>
     
@@ -192,7 +192,7 @@
     <div id="header">
       <ul>
         <b>
-        <li style="color:#CC2F5C;">HOME</li>
+        <li style="color:#CC2F5C;" id="hometxt">HOME</li>
         <li>ABOUT ME</li>
         <li class="dropdown">
           WORK
@@ -209,9 +209,9 @@
       </ul>
      </div>
     
-    <img src="welcome!.png" class="avatar" width="150px" alt="cartoon drawing of this persons portfolio, saying 'welcome, welcome!'">
+    <img src="welcome!.png" id="avatar" width="150px" alt="cartoon drawing of this persons portfolio, saying 'welcome, welcome!'">
     
-    <img src="banner.jpg" class="banner" width="1440px" height="600px"  alt="starry night sky">
+    <img src="banner.jpg" id="banner" width="1440px" height="600px"  alt="starry night sky">
     
     
     <h1 id="yeg">
@@ -291,4 +291,20 @@
     
     
   </body>
+  
+  
+  <script>
+  // get the avatar image
+  const avatarImg = document.getElementById('avatar');
+
+  // assign click events
+  document.getElementById('hometxt').addEventListener('click', () => {
+  avatarImg.src = 'banner.jpg';
+  });
+
+
+
+
+</script>
+  
 </html>
