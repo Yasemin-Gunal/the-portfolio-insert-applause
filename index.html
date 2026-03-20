@@ -302,13 +302,11 @@
   avatarImg.src = '2clickHome.png';
   });
     
-  document.getElementById('yeg').addEventListener('click', () => {
-  avatarImg.src = '2clickHome.png';
+  document.getElementById('yeg').addEventListener('click', (e) => {
+  e.stopPropagation();  // 🔑 prevents it from triggering HOME
+  avatarImg.src = 'yegava.png';
   });
     
-
-
-
 
 
 </script>
