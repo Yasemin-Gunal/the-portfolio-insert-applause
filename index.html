@@ -124,11 +124,17 @@
 
       .dropdown-menu {
         display: none;
-        position: absolute;
-        z-index: 100; 
-        transform: translate(-470px, 0px); 
+        position: fixed;
+        z-index: 1000; 
+        top: 0px;
+        left: 0px;
+
+        transform: translate(0px, 0px); 
         background-color: #65FFDB;
-        padding: 20px 467px;
+        /*padding: 20px 720px 35px 720px;
+        margin: 0px 720px; */
+      
+  
 
        
         white-space: nowrap;
@@ -136,7 +142,7 @@
         
         text-align: center;
         list-style: none;
-        margin: 0px 300px;
+    
         gap: 20px;
         
    
@@ -145,7 +151,7 @@
       .dropdown-menu li {
         display: inline-block;
         margin: 0 15px;
-        padding: 10px 20px;
+        padding: 10px 20px 0 20px;
         font-size: 20px;
 
         color: #282342;
