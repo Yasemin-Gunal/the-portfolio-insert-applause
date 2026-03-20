@@ -27,6 +27,8 @@
         width: 100%; 
         position: sticky;
         top: 0;
+        
+        z-index: 1000; /* adjusts layer order */
       }
   
       #header li {
@@ -117,34 +119,25 @@
       
       .dropdown {
         position: relative;
+        
       }
 
       .dropdown-menu {
         display: none;
         position: absolute;
-        top: 50%;
-  
-        transform: translate(-35px, 0px); /* center both vertically and horizontally */
-       
-        
+        z-index: 100; 
+        transform: translate(-470px, 0px); 
         background-color: #2ED6AF;
-        padding: 20px 200px;
-        z-index: 1000; /* adjusts layer order */
+        padding: 20px 500px;
+
        
         white-space: nowrap;
         
         
         text-align: center;
         list-style: none;
-        margin: 44px 200px;
+        margin: 0px 300px;
         gap: 20px;
-        
-     
-        
-        
-
-        
-      
         
    
       }
