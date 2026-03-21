@@ -28,7 +28,7 @@
         width: 100%; 
         position: sticky;
         top: 0;
-        
+        white-space: nowrap; 
         z-index: 1000; /* adjusts layer order */
       }
   
@@ -37,9 +37,10 @@
         font-size: 40px;
         color: #282342;
         list-style: none;
-        display: inline;
-        margin: 0 25px 0 25px;
+        display: inline; 
+        margin: 0 50px 0 0px;
         position: relative;
+        border: 1px solid red;
         top: 10px;
       }
       
@@ -116,14 +117,13 @@
       
       .dropdown {
         position: relative;
-        
       }
 
       .dropdown-menu {
         display: none;
         position: fixed;
-        z-index: 1000; 
-        top: 60px;
+        z-index: 1001; 
+        top: 70px;
         left: 8px;
         padding-bottom: 25px;
         text-align: center;
@@ -134,33 +134,29 @@
         /* DONT TOUCH GIRL PLEASE */
         white-space: nowrap; 
         list-style: none;
-        
-        
       }
    
 
-      .dropdown-menu li {
-        display: inline-block;
+     /* .dropdown-menu li {
+        /*display: inline;
+        gap: 200px;
+        margin: 0;
+        padding: 0px 0px 0 0px;
+        /*transform: translate(80px, 0px);
         
-        padding: 10px 0px 0 0px;
-        transform: translate(80px, 0px);
-        
-        font-size: 15px;
+        font-size: 10px;
 
         color: #282342;
-      }
+      }*/
 
 
       .dropdown-menu a {
         text-decoration: none;
         color: inherit;
-        
       }
 
       .dropdown:hover .dropdown-menu {
        display: flex;
-        
-        
       }
       
     /* dropdown shtuff */
@@ -188,13 +184,13 @@
         <li class="dropdown">
           WORK
           <ul class="dropdown-menu">
-            <li><a href="#">DIGITAL</a></li>
-            <li><a href="#">TRADITIONAL</a></li>
-            <li><a href="#">PAID WORK</a></li>
-            <li><a href="#">PROJECTS</a></li>
-            <li><a href="#">OTHER</a></li>
+            <li class="ddm-li"><a href="#">DIGITAL</a></li>
+            <li class="ddm-li"><a href="#">TRADITIONAL</a></li>
+            <li class="ddm-li"><a href="#">PAID WORK</a></li>
+            <li class="ddm-li"><a href="#">PROJECTS</a></li>
+            <li class="ddm-li"><a href="#">OTHER</a></li>
           </ul>
-        </li>
+          </li>
         <li>RESUME</li>
         </b>
       </ul>
