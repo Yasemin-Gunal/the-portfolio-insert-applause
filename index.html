@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-CA">
   <head>
-    <title>Yasemin Gunal Portfolio</title>
+    <title>Yasemin Gunal Portfolio HOME</title>
     <link rel="icon" type="image/png" href="placeholder.png">
     <meta charset="UTF=8">
     <!-- Created by Yasemin Gunal 3/19/2026 -->
@@ -13,7 +13,8 @@
     <!-- fonts -->
     
     <style>
-    
+      
+      /* general styling */
       * {box-sizing: border-box;}
       
       body { 
@@ -22,6 +23,31 @@
         margin: 10px 8px 0 8px;
       }
         
+      h2, h3 {
+        font-family: Koho; 
+        color: #CC2F5C;
+        font-size: 65px;
+        width: 50%;
+      }
+      
+      
+      h1 {
+        font-family: Koho; 
+        color: #65FFDB;
+        font-size: 90px;
+        margin-top: 60px;
+      }
+      
+      
+      p { 
+        font-family: Krub;
+        color: #65FFDB;
+        font-size: 25px;
+        width: 50%; 
+      }
+      /* general styling END */
+      
+      /* HEADER */
       #header {
         background-color: #65FFDB;
         height: 80px;
@@ -29,7 +55,7 @@
         position: sticky;
         top: 0px;
         white-space: nowrap; 
-        z-index: 1000; /* adjusts layer order */
+        z-index: 1000;
       }
   
       #header li {
@@ -47,30 +73,14 @@
       #header li:hover {
           color: #CC2F5C;
       }
-          
-      h2, h3 {
-        font-family: Koho; 
-        color: #CC2F5C;
-        font-size: 65px;
-        width: 50%;
+      /* HEADER END */
+      
+      
+      #yeg {
+        margin: -550px 0 0 0;
       }
       
-      
-      h1 {
-        font-family: Koho; 
-        color: #65FFDB;
-        font-size: 90px;
-        margin-top: 60px;
-      }
-      
-      p { 
-        font-family: Krub;
-        color: #65FFDB;
-        font-size: 25px;
-        width: 50%;
-        
-      }
-      
+      /* MAIN CONTENT */
       #mainContent {
         display: grid;
         grid-template-columns: 50% 50%; 
@@ -83,16 +93,13 @@
       }
       
       
-
       .content-txt {
         padding: 0px 10px 0px 200px;
         width: 1000;
       }
+      /* MAIN CONTENT END */
       
-      #yeg {
-        margin: -550px 0 0 0;
-      }
-      
+      /* FOOTER */
       #attributes a {
         color: #65FFDB;
         font-size: 12px;
@@ -112,9 +119,10 @@
       #contacts a {
         text-decoration: none;
       }
+      /* FOOTER END*/
       
-      /* dropdown shtuff */ 
-      /* DONT TOUCH GIRL PLEASE */
+      
+      /* DROPDOWN*/ 
       
       .dropdown {
         position: relative;
@@ -152,7 +160,7 @@
       .dropdown:hover .dropdown-menu {
        display: flex;
       }
-    /* dropdown shtuff */
+    /* DROPDOWN END */
 
       #avatar{
         position: fixed; 
