@@ -284,6 +284,15 @@
   <script>
   // get the avatar image
   const avatarImg = document.getElementById('avatar');
+  let avatarVisible = 1;
+
+  document.addEventListener("keydown", function(event) {  // hide ava when clicking h
+
+    if (event.key === "h" || event.key === "H") {
+      avatarVisible = 1 - avatarVisible;
+      avatarImg.style.opacity = avatarVisible;
+    }
+  });
 
   // assign click events
   document.getElementById('hometxt').addEventListener('click', () => {
