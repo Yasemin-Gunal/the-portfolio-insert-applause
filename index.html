@@ -304,6 +304,11 @@
   avatarImg.src = 'yegava.png';
   });
     
+   document.getElementById('avatar').addEventListener('click', (e) => {
+  e.stopPropagation();  
+  avatarImg.src = 'hideAva.png';
+  });
+    
 
 
 </script>
