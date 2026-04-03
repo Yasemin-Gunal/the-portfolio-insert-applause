@@ -14,6 +14,8 @@
     
     <style>
       
+      
+  
       /* general styling */
       * {box-sizing: border-box;}
       
@@ -75,34 +77,31 @@
           color: #CC2F5C;
       }
       /* HEADER END */
-         
-      #yeg {
-        margin: -550px 0 0 0;
-        cursor: pointer;
-      }
+      
       
       /* MAIN CONTENT */
       #mainContent {
-        display: grid;
-        grid-template-columns: 50% 50%; 
-        margin: 500px auto 100px auto;
-        width: 100%;
-        max-width: 1200px;
+   
+        margin: 0 auto;
       }
       
       
-      .gallery {
-        width: 600px;
-        padding-right: 60px;
+      #resume {
+        margin-top: 30px;
+        width: 490px;
       }
       
-      
-      .content-txt {
-        width: 1000;
-        align-items: center;
-        justify-content: center;
-        justify-items: start;
+      #resumeLink {
+        margin: 0px auto;
+        margin-top: -150px;
+        margin-bottom: 100px;
       }
+ 
+      #resumeLink a{
+        color: #65FFDB;
+        font-family: Krub;
+      }
+      
       /* MAIN CONTENT END */
       
       /* FOOTER */
@@ -129,7 +128,6 @@
       
       
       /* DROPDOWN*/ 
-        /* AI was used to figure out how to create a hover triggered drop-down menu, such as display:none/flex */
       
       .dropdown {
         position: relative;
@@ -168,119 +166,56 @@
        display: flex;
       }
     /* DROPDOWN END */
-      
-      #why {
-        margin: 0 auto; 
-        margin-bottom: 150px;
-      }
-      
-      #why a {
-        color: #65FFDB;
-    
-      }
 
       #avatar{
-        position: fixed; 
-        bottom: 0px;        
-        right: 0px;           
-        z-index: 1000;
-        cursor: pointer;
         
+        transform: translate( 260px, -230px);      
+        cursor: pointer;
+        z-index: 1000;   
+
       }
     
     </style>
     
       
   </head>
-  <body>
-    
+  <body>  
     
     <div id="header">
       <ul>
         <b>
-        <li style="color:#CC2F5C;" id="hometxt">HOME</li>
-          <li><a href="aboutMePage.html">ABOUT ME</a></li>
+        <li id="hometxt">HOME</li>
+        <li>ABOUT ME</li>
         <li class="dropdown">
-          <a href="workPage.html">WORK</a>
+          WORK
           <ul class="dropdown-menu">
-            <li ><a href="workPage.html#digitalEnter">DIGITAL</a></li>
-            <li ><a href="workPage.html#tradEnter">TRADITIONAL</a></li>
-            <li ><a href="workPage.html#paidEnter">PAID WORK</a></li>
-            <li ><a href="workPage.html#projectEnter">PROJECTS</a></li>
-            <li ><a href="workPage.html#otherEnter">OTHER</a></li>
+            <li ><a href="#">DIGITAL</a></li>
+            <li ><a href="#">TRADITIONAL</a></li>
+            <li ><a href="#">PAID WORK</a></li>
+            <li ><a href="#">PROJECTS</a></li>
+            <li ><a href="#">OTHER</a></li>
           </ul>
           </li>
-          <li><a href="resumePage.html">RESUME</a></li>
+        <li id="resumetxt" style="color:#CC2F5C;">RESUME</li>
         </b>
       </ul>
      </div>
     
-    <img src="welcome!.png" id="avatar" width="150px" alt="cartoon drawing of 'Yasemin Gunal' commenting on their profile"> <!--I wanted to specify what each image was saying but due to the way i made this, no matter what image shows it will deliver the same alt tag -->
-    
-    <img src="banner.PNG" id="banner" width="100%" height="750px"  alt="starry night sky">
-    
-    
-    <h1 id="yeg">
-       YASEMIN EMIRA GUNAL
-    </h1>
-    <p style="margin: 0 auto;">
-      Let design tell our next story 
-    </p>
     
   
     
     <div id="mainContent">
      
         <div class="content">   
-          <img src="meStar.png" class="gallery" alt="2 stars, one coloured with the Turkish flag, the other with the Palestinian flag. Each star has a drawing of 'Yasemin's' avatar beside it. ">
+          <img src="resume.jpg" id="resume" alt="Image of 'Yasemin Gunals' resume">
         </div>
 
-
-         <div class="content-txt">
-          <h2>
-            WHO?
-          </h2>
-          <p>
-            Yo! <br> I'm Yasemin Emira Gunal. <br><br>I'm
-            20 years old and use she/her pronouns.<br><br> I come from a Turkish and Palestinian background. 
-            
-          </p>
-        </div>
-   
-      
-       <div class="content-txt">
-        <h2>
-          WHAT?
-        </h2>
-        <p>
-            I am currently studying at University of Waterloo for Global Business Digital Arts as a second year.
-        </p>
-      </div>
-  
-
-      
-      <div class="content">   
-      <img src="uwStar.png"  class="gallery"  alt="star coloured like the logo for Univerisy of Waterloo">
-      </div>
-      
-       <div class="content">   
-      <img src="canadaStar.png"  class="gallery" alt="star coloured like the Canadian flag">
-      </div>
-      
-
-      <div class="content-txt"> 
-        <h2>
-          WHERE?
-        </h2>
-        <p>
-          I have lived in Canada my entire life, growing up in my home Waterloo.  
-        </p>
-      </div>
     </div>
     
-      <h1 id="why">
-          <a href="#">WHY?</a>
-        </h1>
+     <img src="pullingAva.gif" id="avatar" width="170px" z-index="1000" alt="cartoon drawing of 'Yasemin Gunal' commenting on their profile"> <!--I wanted to specify what each image was saying but due to the way i made this, no matter what image shows it will deliver the same alt tag -->
+    
+     
+    <p id="resumeLink"><a href="https://drive.google.com/file/d/19nAjBdMIJ-G0LckQ9S4q4Zz0gFIqJEFs/view?usp=sharing" target="_blank">CLICK TO OPEN RESUME!</a></p>
     
     <div id="footer">
       <h2>
@@ -297,6 +232,7 @@
        <a href="https://www.flaticon.com/free-icons/telephone" target="_blank" title="telephone icons">Telephone icons created by Ricardo Ruiz - Flaticon</a> 
        <a href="https://www.flaticon.com/free-icons/linkedin" target="_blank" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a>
        <a href="https://www.flaticon.com/free-icons/email" target="_blank" title="email icons">Email icons created by Pixel perfect - Flaticon</a>
+       <a href="https://www.pexels.com/photo/blue-pink-and-white-andromeda-galaxy-way-110854/" target="_blank" title="starry header image"> Blue Pink and White Andromeda Galaxy Way by Miriam Espacio - Pexels</a>
       </div> 
     </div>
     
@@ -305,40 +241,93 @@
   
   
   <script>
+    
+    
+    
   // get the avatar image
-  //AI was used to understand how page interactions work, such as event listeners, getting elements, and time functions 
+  const resumeImg = document.getElementById('resume');
   const avatarImg = document.getElementById('avatar');
+  const resumeLink = document.getElementById('resumeLink');
   let avatarVisible = 1;
 
-  document.addEventListener("keydown", function(event) {  // hide ava when clicking h
 
-    if (event.key === "h" || event.key === "H") {
+  document.addEventListener("keydown", function(event) {
+
+    if (!avatarImg.src.includes('pullingAva.gif') && (event.key === "h" || event.key === "H")) {
       avatarVisible = 1 - avatarVisible;
       avatarImg.style.opacity = avatarVisible;
       
-      if (avatarVisible === 1) {
-        avatarImg.style.pointerEvents = "auto";
-      } else {
-        avatarImg.style.pointerEvents = "none";
-      }
+    if (avatarVisible === 1) {
+      avatarImg.style.pointerEvents = "auto";
+    } else {
+      avatarImg.style.pointerEvents = "none";
+    }
+      
     }
   });
+    
 
-  // assign click events
-  document.getElementById('hometxt').addEventListener('click', () => {
-  avatarImg.src = '2clickHome.png';
-  });
+avatarImg.addEventListener('click', () => {
+
+  if (resumeImg.src.includes('resume.jpg')) {
     
-  document.getElementById('yeg').addEventListener('click', (e) => {
-  e.stopPropagation();  
-  avatarImg.src = 'yegava.png';
-  });
+    resumeLink.style.opacity = "0";
+    resumeLink.dataset.href = resumeLink.href;
+    resumeLink.removeAttribute("href");
+    resumeLink.style.pointerEvents = "none";
     
-   document.getElementById('avatar').addEventListener('click', (e) => {
-  e.stopPropagation();  
-  avatarImg.src = 'hideAva.png';
-  });
+    avatarImg.style.transform = "translate(260px, -230px)"; //return gif positon
+    resumeImg.src = 'coolerPlaceholder.jpg';
+
+    avatarImg.src = "fellAva.gif";
+    avatarImg.style.width = "240px";
     
+     setTimeout(() => {
+      avatarImg.style.opacity = "0";
+    }, 1600);
+
+    setTimeout(() => {
+      avatarImg.style.transform = "translate(260px, -290px)"; // move up to match gifs
+      avatarImg.style.opacity = "1";
+      avatarImg.src = "betterAva.png";
+      avatarImg.style.width = "150px";
+      
+    }, 1900);
+
+  } else {
+    resumeLink.style.opacity = "1";
+    resumeLink.href = resumeLink.dataset.href;
+    resumeLink.style.pointerEvents = "auto";
+    
+    avatarImg.style.transform = "translate(260px, -230px)";//return gif positon
+    resumeImg.src = 'resume.jpg';
+
+    avatarImg.src = "fellAva.gif";
+    avatarImg.style.width = "240px";
+    
+    setTimeout(() => {
+      avatarImg.style.opacity = "0";
+    }, 1600);
+
+    setTimeout(() => {
+      avatarImg.style.transform = "translate(260px, -290px)"; // move up to match gifs
+      avatarImg.style.opacity = "1";
+      avatarImg.src = "boringAva.png";
+      avatarImg.style.width = "150px";
+    }, 1900);
+  }
+  
+  if (avatarImg.src.includes('betterAva.png') || avatarImg.src.includes('boringAva.png')) {
+      document.getElementById('resumetxt').addEventListener('click', () => {
+        avatarImg.style.transform = "translate(260px, -290px)"; // move up to match gifs
+        avatarImg.src = '2clickResume.png';  
+      });
+  }
+});
+  
+    
+    
+
 
 
 </script>

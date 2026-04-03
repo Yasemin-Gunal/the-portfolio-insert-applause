@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <title>Yasemin Gunal Portfolio WORK PAGE</title>
+    <link rel="icon" type="image/png" href="thumbnail.png">
+    <meta charset="UTF=8">
+    <!-- Created by Yasemin Gunal 3/19/2026 -->
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- fonts -->
+    
+    <style>
+      
+      /* general styling */
+      * {box-sizing: border-box;}
+      
+      body { 
+        background-color: #322C4D;
+        text-align: center;
+        margin: 10px 8px 0 8px;
+      }
+        
+      h2, h3 {
+        font-family: Koho; 
+        color: #CC2F5C;
+        font-size: 65px;
+
+        margin: 0px auto;
+      
+
+      }
+      
+      
+      h1 {
+        font-family: Koho; 
+        color: #65FFDB;
+        font-size: 90px;
+        margin-top: 60px;
+        
+      }
+      
+      
+      p { 
+        font-family: Krub;
+        color: #65FFDB;
+        font-size: 25px;
+        
+      }
+      /* general styling END */
+      
+      /* HEADER */
+      #header {
+        background-color: #65FFDB;
+        height: 80px;
+        width: 100%; 
+        position: sticky;
+        top: 0px;
+        white-space: nowrap; 
+        z-index: 1000;
+        
+  
+      }
+  
+      #header li {
+        font-family: KoHo;
+        font-size: 40px;
+        color: #282342;
+        list-style: none;
+        display: inline; 
+        margin: 0 50px 0 0px;
+        position: relative;
+        top: 10px;
+        cursor: pointer;
+      }
+      
+      #header li:hover {
+          color: #CC2F5C;
+      }
+      /* HEADER END */
+         
+      
+      /* DIGITAL ART CONTENT */
+      #digitalContent {
+        column-count: 4;
+        column-gap: 20px;
+        margin: auto;
+        padding: 0 30px;
+        
+      }
+      
+      .digitalGallery {
+        break-inside: avoid;
+        margin-bottom: 20px;
+        width: 100%;
+        cursor: pointer;
+      }
+      
+      /* DIGITAL CONTENT END */
+      
+      
+      /* TRAD ART CONTENT */
+      #tradContent {
+        column-count: 4;
+        column-gap: 20px;
+        margin: auto;
+        padding: 0 30px;
+        
+      }
+      
+      .tradGallery {
+        break-inside: avoid;
+        margin-bottom: 20px;
+        width: 100%;
+        cursor: pointer;
+      }
+      
+
+      /* TRAD CONTENT END */
+      
+      
+      /* PAID CONTENT */
+      #paidContentComms, #paidContentSales {
+        column-count: 4;
+        column-gap: 20px;
+        margin: auto;
+        padding: 0 100px;
+        
+      }
+      
+      .paidGallery {
+        break-inside: avoid;
+        margin-bottom: 20px;
+        width: 100%;
+        cursor: pointer;
+      }
+      
+
+      /* PAID CONTENT END */
+      
+       /* PROJECT CONTENT */
+      #projectContent {
+        display: grid;
+        grid-template-columns: 50% 50%; 
+        margin: 0 auto;
+  
+      }
+      
+      .projectGallery {
+        width: 600px;
+        cursor: pointer;
+      }
+      /* PROJECT CONTENT END */
+      
+      /* OTHER CONTENT */
+        #otherContent {
+          display: grid;
+          grid-template-columns: 50% 50%; 
+          margin: 0 auto;
+        }
+
+        .otherGallery {
+          width: 600px;
+          cursor: pointer;
+        }
+      /* OTHER CONTENT END */
+      
+      
+      /* FOOTER */
+      #attributes a {
+        color: #65FFDB;
+        font-size: 12px;
+      }
+      
+      #footer h2 {
+         margin: 0 auto;
+      }
+      
+      #contacts li {
+         list-style: none;
+         display: inline;
+         margin: 0 auto;
+         padding: 0 30px 0 0px;
+      }
+      
+      #contacts a {
+        text-decoration: none;
+      }
+      /* FOOTER END*/
+      
+      
+      /* DROPDOWN*/
+      /* AI was used to figure out how to create a hover triggered drop-down menu, such as display:none/flex */
+      
+      .dropdown {
+        position: relative;
+      }
+
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        z-index: 1001; 
+        top: 50px;
+        left: -755px;
+        padding-bottom: 25px;
+        text-align: center;
+        margin: 0px 0px 0px 90px;
+        background-color: #65FFDB;
+        white-space: nowrap; 
+        list-style: none;
+      }
+   
+
+      .dropdown-menu li {
+        gap: 200px;
+        margin: 0;
+        padding: 0px 0px 0px 0px;  
+        font-size: 10px;
+        color: #282342;
+      }
+
+
+      .dropdown-menu a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .dropdown:hover .dropdown-menu {
+       display: flex;
+      }
+    /* DROPDOWN END */
+
+      #avatar{
+        position: fixed; 
+        bottom: 0px;        
+        right: 0px;           
+        z-index: 1000;
+        cursor: pointer;   
+      }
+      
+      /* DETAILED OVERLAY PAGE */ 
+      #overlayDetailed{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0, 0.8); 
+        display: none;   
+        justify-content: center; 
+        align-items: center;
+        z-index: 10000;  
+      }
+      
+      #overlayContentDetailed {
+        background-color: #322C4D;
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 1200px;
+        max-height: 90%;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+      }
+      
+      .overlayGridDetailed {
+      /*IMG*/
+        max-width: 500px;
+        max-height: 600px;
+        margin-right: 30px;
+
+      }
+        
+      .overlayGridDetailed:nth-child(2) {
+      /*TITLE*/
+
+      }
+        
+      .overlayGridDetailed:nth-child(3) {
+      /*FOOTER*/
+    
+      font-size: 19px;
+      text-align: center;
+  
+      }
+      
+
+      
+      .content-txt {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+      /* DETAILED OVERLAY PAGE END */
+      
+      
+        
+      /* SIMPLE OVERLAY PAGE */
+      
+      
+       #overlaySimple{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0, 0.8); 
+        display: none;   
+        justify-content: center; 
+        align-items: center;
+        z-index: 10000;  
+      }
+      
+      #overlayContentSimple {
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 1200px;
+        max-height: 90%;
+        margin: 0 auto;
+      }
+      
+  
+        .overlayGridSimple:first-child {
+        /*IMG*/
+          max-height: 600px;
+          margin: auto auto;
+        }
+      
+        
+      /* SIMPLE OVERLAY PAGE END */
+      
+      /*THE BEAUTIFUL TABLE*/
+      
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      table a {
+         color: #65FFDB;
+      }
+
+      th, td {
+        border: 2px solid #65FFDB;
+        padding: 10px;
+        text-align: center;
+        color: #65FFDB;
+        font-family: Krub;
+      }
+
+      /*THE BEAUTIFUL TABLE END*/
+
+    </style>
+    
+      
+  </head>
+  <body>
+    
+    <div id="overlaySimple">
+      <div id="overlayContentSimple">
+        
+        <img src="placeholder.png" id="overlayImgSimple" class="overlayGridSimple" alt="placeholder">
+        
+      </div>
+    </div>
+    
+    
+    <div id="overlayDetailed">
+      <div id="overlayContentDetailed">
+         <img src="placeholder.png" id="overlayImgDetailed" class="overlayGridDetailed" alt="placeholder">
+        
+        <div class="overlayGridDetailed">
+        
+        <h2>
+           TITLE
+        </h2>
+        <p>
+          THIS IS A PLACEHOLDER SCREEN. In the meantime, have a table.
+        </p>
+          
+             
+        <table>
+          <tr>
+            <th>Table?</th>
+            <td>Check!</td>
+          </tr>
+
+          <tr>
+            <th>Multi-Site?</th>
+            <td>4 pages, Check!</td>
+          </tr>
+
+          <tr>
+            <th>School Email?</th>
+            <td><a href="mailto:ygunal@uwaterloo.ca" target="_blank">Right here,</a> Check!</td>
+          </tr>
+          
+            <tr>
+            <th>Outside link?</th>
+            <td>resume link, Check!</td>
+          </tr>
+      </table>
+        
+        </div>    
+    </div>
+  </div>
+      
+    
+    
+    <div id="header">
+      <ul>
+        <b>
+        <li>HOME</li>
+        <li>ABOUT ME</li>
+        <li class="dropdown" style="color:#CC2F5C;" id="worktxt">
+          WORK
+          <ul class="dropdown-menu">
+            <li ><a href="#digitalEnter">DIGITAL</a></li>
+            <li ><a href="#tradEnter">TRADITIONAL</a></li>
+            <li ><a href="#paidEnter">PAID WORK</a></li>
+            <li ><a href="#projectEnter">PROJECTS</a></li>
+            <li ><a href="#otherEnter">OTHER</a></li>
+          </ul>
+          </li>
+        <li>RESUME</li>
+        </b>
+      </ul>
+     </div>
+    
+    <img src="workDefaultAva.png" id="avatar" width="150px" alt="cartoon drawing of 'Yasemin Gunal' commenting on their profile"> <!--I wanted to specify what each image was saying but due to the way i made this, no matter what image shows it will deliver the same alt tag -->
+  
+    <h1 id="digitalEnter">
+      DIGITAL
+    </h1>
+    
+    <div id="digitalContent">
+      
+      <div class="content">   
+          <img src="BigCityGreens.jpg" id="digitalGal_1" class="digitalGallery" alt="Digital Fanart for Disney Tv animation series 'Big City Greens' featuring every main character hanging out on a large tree." >
+      </div>
+  
+      <div class="content">   
+        <img src="glitterForce.PNG" id="digitalGal_2" class="digitalGallery"  alt="Digital Fanart for 2012 anime 'Glitter Force' or 'Smile Pretty Cure' featuring the main character 'Emily' comforting the main villains" >
+      </div>
+      
+      <div class="content">   
+        <img src="SirPentious.jpg" id="digitalGal_3" class="digitalGallery" alt="Digital Fanart of 'Sir Pentious'redeemed design from 'Hazbin Hotel'">
+      </div>
+      
+      <div class="content">   
+        <img src="Hope.jpg" id="digitalGal_4" class="digitalGallery" alt="Digital monochrome sketchy styled drawing of short haired character looking at stars">
+      </div>
+      
+         <div class="content">   
+          <img src="Katie.jpg" id="digitalGal_5" class="digitalGallery" alt=" Digital Bust up fanart of 'Katie Forester' from 'Yo-kai Watch'">
+      </div>
+  
+      <div class="content">   
+        <img src="lostMyst.PNG" id="digitalGal_6" class="digitalGallery"  alt="Digital drawing of top-down view of galaxy-themed character sitting on her knees and looking up">
+      </div>
+      
+      <div class="content">   
+        <img src="RainbowWhisper.jpg" id="digitalGal_7" class="digitalGallery" alt="Digital Fanart of 'Whisper' from 'Yo-Kai Watch'">
+      </div>
+      
+      <div class="content">   
+        <img src="pokeMyst.jpg" id="digitalGal_8" class="digitalGallery" alt="Digital drawing of galaxy-themed girl, with the characters 'Minior', 'Cosmog', 'Lunatone', 'Honedge', and 'Lampent' from 'Pokemon'">
+      </div>
+      
+      
+      <div class="content">   
+        <img src="Thobe.jpg" id="digitalGal_9" class="digitalGallery" alt="Digital drawing of person wearing a traditional Palestinian thobe">
+      </div> 
+
+    
+      <div class="content">   
+        <img src="TakopiRedraw.jpg" id="digitalGal_10" class="digitalGallery" alt="Redraw of scene from 'Takopi's Original Sin'">
+      </div>
+      
+      <div class="content">   
+        <img src="WhisperGijinka.jpg" id="digitalGal_11" class="digitalGallery" alt="Digital drawing of a human interpertation of character 'Whisper' from 'Yo-Kai Watch'">
+      </div>
+      
+       <div class="content">   
+        <img src="YokaiBus.jpg" id="digitalGal_12" class="digitalGallery" alt="Digital drawing of many characters from series 'Yo-Kai Watch', sitting on a public bus together with heavily red lighting">
+      </div>
+      
+       <div class="content">   
+        <img src="YokaiLand.jpg" id="digitalGal_13" class="digitalGallery" alt="Digital drawing of many characters from series 'Yo-Kai Watch' dressing as 'Alice in Wonderland' characters">
+      </div>      
+      
+       <div class="content">   
+        <img src="yokaiRedraw.jpg" id="digitalGal_14" class="digitalGallery" alt="Digital art of girl shining a light beside characters 'Cadin' and 'Whisper' from 'Yo-Kai Watch' with hich colour contrast">
+      </div>    
+      
+      <div class="content">   
+        <img src="yokaiMon.jpg" id="digitalGal_15" class="digitalGallery" alt="Digital drawing of ice-cream-like 'Pokemon' hugging a shocked/cold girl">
+      </div>   
+            
+      
+    </div>
+    
+     <h1 id="tradEnter">
+      TRADITIONAL
+    </h1>
+    
+    <div id="tradContent">
+      <div class="content">   
+          <img src="placeholder.png" class="tradGallery" alt="placeholder">
+      </div>
+  
+      <div class="content">   
+        <img src="placeholder.png" class="tradGallery"  alt="placeholder">
+      </div>
+      
+      <div class="content">   
+        <img src="placeholder.png" class="tradGallery" alt="placeholder">
+      </div>
+      
+      <div class="content">   
+        <img src="placeholder.png" class="tradGallery" alt="placeholder">
+      </div>
+    </div>
+    
+    
+    
+  
+     <h1 id="paidEnter">
+      PAID WORK
+    </h1>
+    
+      <h2>
+        COMMISSIONS
+      </h2>
+    
+    <div id="paidContentComms">
+      
+      
+      <div class="content">   
+        <img src="teamR.png" class="paidGallery" alt="Placeholder">
+      </div>
+      
+      <div class="content">   
+        <img src="lastSupper.png" class="paidGallery" alt="placeholder">
+      </div>
+    
+      <div class="content">   
+        <img src="pfp1.PNG" class="paidGallery" alt="placeholder">
+      </div>
+  
+      <div class="content">   
+        <img src="pfp2.png" class="paidGallery" alt="placeholder">
+      </div>
+
+        
+      <div class="content">   
+        <img src="espurr.PNG" class="paidGallery" alt="placeholder">
+      </div>
+      
+      <div class="content">
+        <img src="hina.png" class="paidGallery" alt="placeholder">
+      </div>
+      
+      <div class="content">   
+        <img src="flowey.png" class="paidGallery"  alt="placeholder">
+      </div>
+      
+      <div class="content">   
+        <img src="owl.png" class="paidGallery" alt="placeholder">
+      </div>  
+        
+      <div class="content">   
+        <img src="dnd1.png" class="paidGallery" alt="placeholder">
+      </div>
+      
+      <div class="content">   
+        <img src="dnd2.PNG" class="paidGallery" alt="placeholder">
+      </div>
+      
+      <div class="content">   
+        <img src="dnd3.png" class="paidGallery" alt="placeholder">
+      </div>
+      
+      
+      
+    </div>
+    
+    
+    
+      <h2>
+        PHYSICAL SALES
+      </h2>
+    
+    <div id="paidContentSales">
+      
+      <div class="content">   
+          <img src="krisKC1.png" class="paidGallery" alt="Digital mock-up of lollipop shaped keychain with a characters face in the center">
+      </div>
+      
+      <div class="content">   
+          <img src="krisKC2.png" class="paidGallery" alt="Digital mock-up of lollipop shaped keychain with a characters face in the center">
+      </div>
+    
+      <div class="content">   
+          <img src="susieKC1.png" class="paidGallery" alt="Digital mock-up of lollipop shaped keychain with a characters face in the center">
+      </div>
+      
+      <div class="content">   
+          <img src="venoctPhoneCase.png" class="paidGallery" alt="Realistic mock-up of my art on a phonecase">
+      </div>
+      
+      <div class="content">   
+          <img src="susieKC2.png" class="paidGallery" alt="Digital mock-up of lollipop shaped keychain with a characters face in the center">
+      </div>
+  
+  
+      <div class="content">   
+        <img src="GGPKeychain.PNG" class="paidGallery"  alt="Photo of keychain of my art">
+      </div>
+      
+      <div class="content">   
+        <img src="RalseiKC.png" class="paidGallery" alt="Digital mock-up of lollipop shaped keychain with a characters face in the center">
+      </div>
+      
+      <div class="content">   
+        <img src="whispersShirt.png" class="paidGallery" alt="Realistic mock-up of my art on a shirt">
+      </div>
+    
+         <div class="content">   
+        <img src="pentiousMousePad.png" class="paidGallery" alt="Realistic mock-up of my art on a mouse pad">
+      </div>
+      
+    </div>
+    
+    
+     <h1 id="projectEnter">
+      PROJECTS
+    </h1>
+    
+      <div id="projectContent">
+        <div class="content">   
+            <img src="portfolioProjectImg.png" class="projectGallery" alt="placeholder">
+        </div>
+
+        <div class="content">   
+          <img src="placeholder.png" class="projectGallery"  alt="placeholder">
+        </div>
+
+        <div class="content">   
+          <img src="placeholder.png" class="projectGallery" alt="placeholder">
+        </div>
+
+        <div class="content">   
+          <img src="placeholder.png" class="projectGallery" alt="placeholder">
+        </div>
+      </div>
+    
+    <h1 id="otherEnter">
+      OTHER
+    </h1>
+    
+      <div id="otherContent">
+        <div class="content">   
+            <img src="placeholder.png" class="otherGallery" alt="placeholder">
+        </div>
+
+        <div class="content">   
+          <img src="placeholder.png" class="otherGallery"  alt="placeholder">
+        </div>
+    
+    </div>
+    
+    
+    <div id="footer">
+      <h2>
+        CONTACT ME!
+      </h2>
+      
+      <ul id="contacts">
+        <li> <a href="mailto:yasemin.e.gunal@gmail.com" target="_blank"> <img src="gmail.png" width="50px" alt="gmail icon"></a></li>
+        <li> <a href="https://wa.me/15195895380" target="_blank"> <img src="mobile.png" width="50px" alt="mobile phone icon"> </a> </li>
+        <li> <a href="https://www.linkedin.com/in/yasemin-gunal-9b0470304/" target="_blank"> <img src="linkedin.png" width="50px" alt="linkedin icon"> </a> </li> 
+      </ul>
+     
+       <div id="attributes">
+       <a href="https://www.flaticon.com/free-icons/telephone" target="_blank" title="telephone icons">Telephone icons created by Ricardo Ruiz - Flaticon</a> 
+       <a href="https://www.flaticon.com/free-icons/linkedin" target="_blank" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a>
+       <a href="https://www.flaticon.com/free-icons/email" target="_blank" title="email icons">Email icons created by Pixel perfect - Flaticon</a>
+       <a href="https://www.pexels.com/photo/blue-pink-and-white-andromeda-galaxy-way-110854/" target="_blank" title="starry header image"> Blue Pink and White Andromeda Galaxy Way by Miriam Espacio - Pexels</a>
+      </div> 
+    </div>
+    
+    
+  </body>
+  
+  
+  <script> 
+  //AI was used to understand how page interactions work, such as event listeners, getting elements, and time functions 
+    
+  // get the avatar image
+  const avatarImg = document.getElementById('avatar');
+  let avatarVisible = 1;
+    
+  // const digital = document.getElementById("digitalContent");
+  // const project = document.getElementById("projectContent");
+    
+  const overlay = document.getElementById("overlayDetailed");
+  const overlayImg = document.getElementById("overlayImgDetailed");
+    
+  const overlaySimple = document.getElementById("overlaySimple");
+  const overlayImgSimple = document.getElementById("overlayImgSimple");
+    
+  let currentImg = "";
+    
+ //AI was used to figure out how to attatch an image path to a variable and use it to change the overlay img
+  document.addEventListener("click", function(event) { //get recently clicked img
+  if (event.target.tagName === "IMG") {
+    let fullPath = event.target.src;          // full URL
+    currentImg = fullPath.split("/").pop();   // extract filename
+    console.log(currentImg);
+  }
+  });
+    
+  document.addEventListener("click", function(event) { //if clicking on paid work, projects, or other, open detailed overlay
+
+    if (event.target.matches(".paidGallery, .projectGallery, .otherGallery")) {
+      overlayImg.src = event.target.src;
+      overlay.style.display = "flex";
+    }
+  });
+    
+  // Close overlay if clicking outside content
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) {
+      overlay.style.display = "none";
+    }
+  });
+    
+    
+  //SIMPLE OVERLAY
+    
+  document.addEventListener("click", function(event) { //if clicking on Digital or trad, simple overlay appears
+
+    if (event.target.matches(".digitalGallery, .tradGallery")) {
+      overlayImgSimple.src = event.target.src;
+      overlaySimple.style.display = "flex";
+    }
+  });
+    
+  overlaySimple.addEventListener("click", (e) => {
+    if (e.target === overlaySimple) {
+      overlaySimple.style.display = "none";
+    }
+  });
+    
+ 
+    
+    
+ //AVATAR STUFF   
+  document.addEventListener("keydown", function(event) {  // hide ava when clicking h
+
+    if (event.key === "h" || event.key === "H") {
+      avatarVisible = 1 - avatarVisible;
+      avatarImg.style.opacity = avatarVisible;
+      
+      if (avatarVisible === 1) {
+        avatarImg.style.pointerEvents = "auto";
+      } else {
+        avatarImg.style.pointerEvents = "none";
+      }
+    }
+  });
+
+  // assign click events
+  document.getElementById('worktxt').addEventListener('click', () => {
+  avatarImg.src = '2clickWorkAva.png';
+  });
+    
+   document.getElementById('avatar').addEventListener('click', (e) => {
+  e.stopPropagation();  
+  avatarImg.src = 'hideAva.png';
+  });
+    
+
+
+
+</script>
+  
+</html>
